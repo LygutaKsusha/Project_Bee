@@ -1,6 +1,6 @@
 # Project_Bee 
 
-A camera based monitoring system that identifies and tracks bees (utilizes tensorflow, opencv and some others).
+A camera based monitoring system that identifies and tracks bees (utilizes Tensorflow, Opencv and some others).
 
 
 ## Presentation
@@ -35,6 +35,6 @@ This is what you should get:
 
 ## Configuration
 
-You can modify several parameters in the  [Config]([[your-project-name/tree/master/your-subfolder](https://github.com/LygutaKsusha/Project_Bee/blob/main/Presentation.pdf)](https://github.com/LygutaKsusha/Project_Bee/blob/main/code/config.yaml)) file (enable or disable some parameters for playing around)
+You can modify several parameters in the  [Config file]([your-project-name/tree/master/your-subfolder](https://github.com/LygutaKsusha/Project_Bee/blob/main/code/config.yaml)) file (enable or disable some parameters for playing around)
 
 
