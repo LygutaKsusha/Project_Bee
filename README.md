@@ -1,11 +1,11 @@
 # Project_Bee 
 
-A camera based monitoring system that identifies and tracks bees (utilizes tensorflow, opencv and some others).
+A camera-based monitoring system that identifies and tracks bees (utilizes Tensorflow, Opencv and some others).
 
 
 ## Presentation
 
-More information can be found in the Presentation
+More information can be found in the [Presentation](https://github.com/LygutaKsusha/Project_Bee/blob/main/Presentation.pdf)
 
 
 ## Give it a go
@@ -31,10 +31,10 @@ python3 main.py --video=./VIDEO_FILE_NAME
 
 This is what you should get:
 
- - Red dot: Bees with Varroa mite
+ - Bees with Varroa mites in the video will be marked with Red dots
 
 ## Configuration
 
-You can modify several parameters in the Config.py file (enable or disable some parameters for playing around)
+You can modify several parameters in the [Config](https://github.com/LygutaKsusha/Project_Bee/blob/main/code/config.yaml) file (enable or disable some parameters for playing around)
 
 
