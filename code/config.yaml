@@ -159,7 +159,7 @@ SAVE_EXTRACTED_IMAGES:       False
 # The folder to store the extracted images to
 SAVE_EXTRACTED_IMAGES_PATH:  "images"
 
-# Save images that passed the classification with positiv results?
+# Save images that passed the classification with positive results?
 SAVE_DETECTION_IMAGES:       False
 SAVE_DETECTION_PATH:         "Detections"
 
@@ -182,38 +182,17 @@ CLASSIFICATION_THRESHOLDS: {
 
 
 ##
-## LORAWAN
+## WIFI
 ##
 
-# Enable or disable LoRaWAN with the RN2483A
-RN2483A_LORA_ENABLE:                      False
+# Enable or disable WiFi
+WIFI_ENABLE:                              True
 
-# The USB port where the RN2483A is connected to
-RN2483A_USB_PORT:                         "/dev/ttyUSB0"
+# SSID of the WiFi network
+WIFI_SSID:                                "YourWiFiSSID"
 
-# Disable duty cycle tests. This can help during development
-LORAWAN_DISABLE_DUTY_CYCLE_CHECKS:        False
+# Password of the WiFi network
+WIFI_PASSWORD:                            "YourWiFiPassword"
 
-# Device address as given in the things network (ABP)
-LORAWAN_DEVADDR:                          "260135C6"
-
-# Network session key as given in the things network (ABP)
-LORAWAN_NET_SESSION_KEY:                  "BDBB97C4CC0A6DB3C27F78C45B028D8F"
-
-# Application session key as given in the things network (ABP)
-LORAWAN_APP_SESSION_KEY:                  "1E682B441E3F1FFCFCF1AF07DC8EB88E"
-
-# LoRaWAN channel configuration
-# (Channel ID, Frequency, Data-rate min, Data-rate max)
-LORAWAN_CHANNEL_CONFIG:                   [
-                         [0, 868100000, 0, 5],
-                         [1, 868300000, 0, 5],
-                         [2, 868500000, 0, 5],
-                         [3, 867100000, 0, 5],
-                         [4, 867300000, 0, 5],
-                         [5, 867500000, 0, 5],
-                         [6, 867700000, 0, 5],
-                         [7, 867900000, 0, 5],
-                     ]
-
-
+# WiFi interface name (e.g., wlan0, eth0)
+WIFI_INTERFACE:                    "wlan0"

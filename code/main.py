@@ -37,9 +37,9 @@ def main():
         imgClassifier = BeeClassification()
 
     # Create processes and connect message queues between them
-    lorawan = None
-    if get_config("RN2483A_LORA_ENABLE"):
-        lorawan = DetectThread()
+    wifi = None
+    if get_config("WIFI_ENABLE"):
+        wifi = DetectThread()
     imgExtractor = ImageExtractor()
     imgConsumer = ImageConsumer()
     visualiser = Visual()
@@ -56,8 +56,8 @@ def main():
         imgConsumer.start()
         imgExtractor.start()
         visualiser.start()
-        if lorawan is not None:
-            lorawan.start()
+        if wifi is not None:
+            wifi.start()
 
         # Quit program if end of video-file is reached or the camera got disconnected
         #imgConsumer.join()
@@ -69,8 +69,8 @@ def main():
     except (KeyboardInterrupt, SystemExit):
 
         # Tear down all running process to ensure that we don't get any zombies
-        if lorawan is not None:
-            lorawan.stop()
+        if wifi is not None:
+            wifi.stop()
         imgProvider.stop()
         imgExtractor.stop()
         visualiser.stop()
