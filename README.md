@@ -1,7 +1,5 @@
 # Project_Bee 🐝
 
-[![GitHub license](https://img.shields.io/github/license/LygutaKsusha/Project_Bee)](
-
 A camera-based monitoring system that identifies and tracks bees (utilizes Tensorflow, Opencv and some others).
 
 
