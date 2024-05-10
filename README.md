@@ -33,6 +33,14 @@ for further segmetaion, extracting photo, labeling and train your Model to recog
 All settings and properties can be changed/enabled/disabled in the 
 [Config](https://github.com/LygutaKsusha/Project_Bee/blob/main/code/config.yaml) file
 
+Each frame captured by the camera (or from a video file) will be processed to detect bees within the image. The positions of the bees identified will then be used to track their movements and paths using Kalman filters.
+
+Once a bee is detected, it will be isolated from the image, rotated as necessary, and sent to a neural network for classification.
+
+The neural network performs basic classification tasks to identify bees infected with Varroa mites. These results can also be visualized. The neural network operates independently, and its results might not be immediate enough to display in real-time, especially if the bee has moved out of the camera's view. This timing issue depends on the capabilities of the system being used.
+
+The neural network was trained using data gathered from the mentioned camera system. So you might observe different outcomes due to variations in camera angles, resolutions, clarity, background color, and other factors. In such cases, you should create your own dataset and use it to train the neural network. 
+
 Take to account that each environment is different so you'll get different results every time,
 e.g. different video samples, so you would need to re-train your Model to keep better detecting while streaming on-line and trying analize on-the fly varroa infections.
 
@@ -63,5 +71,4 @@ This is what you should get:
 ## Configuration
 
 You can extend/modify parameters based on the needs in the [Config](https://github.com/LygutaKsusha/Project_Bee/blob/main/code/config.yaml) file.
-
 
