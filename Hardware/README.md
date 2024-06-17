@@ -35,6 +35,20 @@ It is also possible to use LXDE when you do Remote Desktop to your Jetson Nano. 
 xrdb $HOME/.Xresources xsetroot -solid grey -terminal-emulator -geometry 80x24+10+10 -ls -title “$VNCDESKTOP Desktop” & # Fix to make GNOME work export XKL_XMODMAP_DISABLE=1 #/etc/X11/Xsession /usr/bin/startlxde
 ```
 
+## Discussion of improvement opportunities
+
+Taking to account the cost of the hardware (NVDIDIA Jetson Eveloper Kit is not of the cheapest ones), might be considered to use some Raspberry Pi models for the project. It will be more cost-effective and will be able to handle the project requirements as well.
+
+For example - Raspberry Pi 4 Model B (4GB RAM): This is a powerful and affordable single-board computer that can handle computer vision tasks. It's not as powerful as the NVIDIA Jetson, but it's a good budget option. It has a quad-core Cortex-A72 CPU running at 1.5GHz, 4GB of LPDDR4 RAM, and Gigabit Ethernet, among other features.
+
+It would work in conjunction with the Raspberry Pi High Quality Camera: this is a higher resolution camera than the Camera Module 2, with a 12.3 megapixel Sony IMX477 sensor. It's compatible with the Raspberry Pi 4 and can be used with a C-Mount lens for better focus on the bees.
+
+Some thoughts and concerns could be around the power consumption, as the Raspberry Pi might consume more power than the Jetson (that's why Jetson has been chosen as the first option).
+
+Additionally to this you also would need A CSI camera cable (included with the High Quality Camera), a C-Mount lens (not included with the camera), and a power supply for the Raspberry Pi.
+
+It's possible to connect to your Raspberry Pi remotely using a Remote Desktop Protocol (RDP). Initially you just would need to enable VNC Server on the App by itself and install a VNC Client on your PC.
+
 
 ## More and more info for curious
 
