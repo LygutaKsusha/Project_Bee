@@ -72,3 +72,16 @@ This is what you should get:
 
 You can extend/modify parameters based on the needs in the [Config](https://github.com/LygutaKsusha/Project_Bee/blob/main/code/config.yaml) file.
 
+## Discussion of improvement opportunities
+
+As a further improvement, some pre-trained models could be taken to account that already have the capability and required functionality. Here are a few options:
+
+1. YOLO (You Only Look Once): YOLO is a real-time object detection system that can identify objects in images and videos. It's fast and accurate, making it a good choice for tracking bees. There are several versions of YOLO available, including YOLOv3, YOLOv4, and YOLOv5. We can use a pre-trained YOLO model and fine-tune it on a dataset of bee images to improve its performance.
+
+2. MobileNet-SSD: MobileNet-SSD is a lightweight object detection model that's designed to run on mobile devices. It's less accurate than YOLO, but it's faster and requires less computing power. We can use a pre-trained MobileNet-SSD model and fine-tune it on a dataset of bee images.
+
+3. Faster R-CNN: Faster R-CNN is a state-of-the-art object detection model that's accurate and fast. It's more complex than YOLO and MobileNet-SSD, but it can achieve better results. We can use a pre-trained Faster R-CNN model and fine-tune it on a dataset of bee images.
+
+Some more experiments are needed here with these models and parameters to find the most appropriate solution for the project.
+
+
